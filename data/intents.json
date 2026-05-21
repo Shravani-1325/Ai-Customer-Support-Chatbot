@@ -1,0 +1,189 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Goodmorning",
+        "Goodevening",
+        "Hi there",
+        "Hey there",
+        "Howdy",
+        "What 's up",
+        "Greetings",
+        "Good afternoon",
+        "Is anyone there",
+        "Hello there",
+        "Hi, I need help",
+        "Hey Can You help me"
+      ],
+      "responses": [
+        "Hello How can I Help you today?",
+        "Hi there! What can I do for you today?",
+        "Hey! I am here to help. What do you need?",
+        "Good to see you! How can I assist?"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order",
+        "Track my order",
+        "Order Status",
+        "What happened to my package",
+        "My order hasn't arrived",
+        "When will my order arrive",
+        "I want to track my shipment",
+        "Can you check my order",
+        "My package is late",
+        "Where is my shipment",
+        "Order tracking",
+        "Check my order",
+        "Is my order on the way",
+        "Order not received",
+        "Delivery status"
+      ],
+      "responses": [
+        "Please share you order ID and I'll check the status for you",
+        "I can help you track your order! Could you provide your order number?",
+        "To check your order status, I'll need your order ID. Can you share that?",
+        "Sure! Please give me your order number and I'll look it up right away."
+      ]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": [
+        "How do I return a product",
+        "Return policy",
+        "Can I return this",
+        "I want to return my order",
+        "What is the return process",
+        "How to get a refund",
+        "Return an item",
+        "Exchange a product",
+        "Is return free",
+        "Return shipping cost",
+        "How many days to return",
+        "I received a wrong product",
+        "Item is damaged, want to return",
+        "Can I exchange instead of return",
+        "Refund policy",
+        "Want to return purchase item",
+        "Help me in return Procedure of my Item"
+      ],
+      "responses": [
+        "We have a 30-day return policy. Items must be unused and in original packaging.",
+        "You can return any product within 30 days of delivery. Visit our returns portal to initiate.",
+        "Returns are easy! Go to your order history, select the item, and click 'Return'. We'll send a pickup.",
+        "Our return window is 30 days. Damaged or incorrect items get free return shipping.",
+        "Easy Return! Just visit our Return Portal, We have 30-days return policy. Ensure that Product is Unused"
+      ]
+    },
+    {
+      "tag": "billing_inquiry",
+      "patterns": [
+        "I was charged twice",
+        "Wrong amount charged",
+        "Billing issue",
+        "Payment problem",
+        "I didn't receive my invoice",
+        "Where is my receipt",
+        "Charge on my card",
+        "Unexpected charge",
+        "Extra charge on account",
+        "When will I be charged",
+        "Payment not going through",
+        "Card declined",
+        "How do I update payment method",
+        "Change billing details",
+        "Invoice request",
+        "I have payment issue."
+      ],
+      "responses": [
+        "I'm sorry about the billing issue. Could you share your email or order ID so I can investigate?",
+        "Billing concerns are important. Please provide your account email and I'll look into it right away.",
+        "For payment issues, I'll need your order number. Our finance team will review within 24 hours.",
+        "I understand this is urgent. Please share your order ID and we'll resolve any billing discrepancy."
+      ]
+    },
+    {
+      "tag": "store_hours",
+      "patterns": [
+        "What are your working hours",
+        "When are you open",
+        "Store timings",
+        "Are you open on Sunday",
+        "What time do you close",
+        "Office hours",
+        "When can I reach support",
+        "Is support available 24/7",
+        "Customer service hours",
+        "When is your helpdesk open",
+        "Do you work on holidays",
+        "Opening hours",
+        "Are you open now",
+        "What days are you open",
+        "Support availability"
+      ],
+      "responses": [
+        "Our support is available Monday to Friday, 9 AM to 6 PM IST.",
+        "We're open Mon\u2013Fri, 9 AM\u20136 PM IST. For urgent issues, email us and we respond within 4 hours.",
+        "Our team works 9 AM to 6 PM IST on weekdays. Weekends are handled by email only.",
+        "Customer support hours: Monday\u2013Friday, 9:00 AM \u2013 6:00 PM IST. We're closed on public holidays."
+      ]
+    },
+    {
+      "tag": "product_pricing",
+      "patterns": [
+        "How much does it cost",
+        "What is the price",
+        "Pricing details",
+        "Is there a discount",
+        "Do you have offers",
+        "Coupon code",
+        "Price of the product",
+        "Cost of the service",
+        "What are your charges",
+        "Is it free",
+        "Free trial available",
+        "Pricing plans",
+        "Subscription cost",
+        "How much for the premium plan",
+        "Cheapest plan available"
+      ],
+      "responses": [
+        "Tell me Product id and I ll share the Pricing detailsIn which pricing you are intrested - Subscription Plans or Product?Our plans pricing starts at \u20b9499/month. Visit our pricing page for full details and plan comparisons.",
+        "We have three plans: Basic (\u20b9499), Standard (\u20b9999), and Premium (\u20b91999) per month",
+        "You can check our latest pricing at www.example.com/pricing. We also offer a 14-day free trial!",
+        "Pricing varies by plan. Would you like me to explain what's included in each tier?"
+      ]
+    },
+    {
+      "tag": "escalate_to_human",
+      "patterns": [
+        "Talk to a human",
+        "Connect me to an agent",
+        "Speak to customer service",
+        "I want to talk to a real person",
+        "Transfer me to support",
+        "This isn't helping",
+        "You are not useful",
+        "I need human help",
+        "Connect me with someone",
+        "Agent please",
+        "Real support needed",
+        "Stop the bot, I want a person",
+        "Escalate my issue",
+        "Supervisor",
+        "This bot is useless"
+      ],
+      "responses": [
+        "I understand! Let me connect you with a human agent. Please hold for a moment.",
+        "I'll transfer you to our support team right away. Average wait time is 2\u20133 minutes.",
+        "Of course! I'm escalating this to a live agent. They'll be with you shortly.",
+        "No problem! Connecting you to a customer support specialist now. Thank you for your patience."
+      ]
+    }
+  ]
+}
