@@ -184,6 +184,61 @@
         "Of course! I'm escalating this to a live agent. They'll be with you shortly.",
         "No problem! Connecting you to a customer support specialist now. Thank you for your patience."
       ]
+    },
+    {
+      "tag": "chitchat",
+      "patterns": [
+        "ok",
+        "fine",
+        "okay",
+        "alright",
+        "got it",
+        "sure",
+        "I see",
+        "understood",
+        "ok thanks",
+        "fine thank you",
+        "sounds good",
+        "great thanks",
+        "yeah okay",
+        "yep",
+        "ok got it",
+        "that's fine"
+      ],
+      "responses": [
+        "Happy to help! Is there anything else i can assis you with?",
+        "Got it! Let me know if you have any other questions",
+        "Of course! Feel free to ask if you need anything else",
+        "Glad I could help! Anything else on your mind?"
+      ]
+    },
+    {
+      "tag": "shipping_delay",
+      "patterns": [
+        "My order is delayed",
+        "My oder is running late",
+        "Why is my delivery late",
+        "My package has not arrived yet",
+        "Delivery is taking too long",
+        "Expected delivery was yesterday",
+        "My shipment is stuck",
+        "My parcel is delayed",
+        "Order is showing delayed in tracking",
+        "Delivery date has passed",
+        "My package is stuck in transit",
+        "Shipment not moving",
+        "Order delayed no update",
+        "Why is shipping taking so long",
+        "My courier is late",
+        "Package not delivered on time",
+        "Still waiting for my order"
+      ],
+      "responses": [
+        "I'm sorry for the delay! Shipments can sometimes be delayed due to high demand or logistics issues. Please share your order ID and I'll check the status.",
+        "Apologies for the inconvenience. Could you share your order number so I can investigate the delay with our shipping team?",
+        "I understand how frustrating a delayed delivery can be. Please provide your order ID and we'll prioritise a resolution.",
+        "We're sorry your package hasn't arrived yet. Share your order ID and I'll escalate this to our shipping team immediately."
+      ]
     }
   ]
 }
