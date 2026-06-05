@@ -46,3 +46,6 @@ class NLPProcessor:
     token = self.preprocess_text(x)
 
     return token
+  
+
+processor = NLPProcessor()
