@@ -22,7 +22,7 @@ sys.path.append(os.path.join(API_DIR, ".."))
 from nlp_processor import NLPProcessor, processor
 
 #>>Chat UI 
-INTERFACE_PATH = os.path.join(API_DIR,"..","interface", "chat.html")
+INTERFACE_PATH = os.path.join(API_DIR,"..","interface")
 
 
 app = Flask(__name__, template_folder=INTERFACE_PATH)
