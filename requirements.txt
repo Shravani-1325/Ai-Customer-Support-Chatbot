@@ -6,4 +6,3 @@ joblib
 numpy
 gunicorn
 setuptools
-os
