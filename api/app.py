@@ -1,4 +1,5 @@
 import nltk
+import os
 nltk_data_path = os.path.join(os.path.expanduser('~'), "nltk_data")
 if not os.path.exists(nltk_data_path):
     nltk.download("punkt", quiet = True)
@@ -11,7 +12,6 @@ from flask_cors import CORS
 import joblib
 import json
 import random
-import os
 import sys #internal list of folder paths
 
 #>> Api directory path
