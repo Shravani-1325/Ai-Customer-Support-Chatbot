@@ -7,7 +7,7 @@ if not os.path.exists(nltk_data_path):
     nltk.download("wordnet", quiet= True)
     nltk.download("punkt_tab", quiet = True)
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import joblib
 import json
@@ -21,7 +21,11 @@ API_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(API_DIR, ".."))
 from nlp_processor import NLPProcessor, processor
 
-app = Flask(__name__)
+#>>Chat UI 
+INTERFACE_PATH = os.path.join(API_DIR,"..","interface", "chat.html")
+
+
+app = Flask(__name__, template_folder=INTERFACE_PATH)
 
 # -- Cors lets the chat.html talk to flask server without being blocked by the browser.
 
@@ -49,6 +53,12 @@ def get_response(intent_tag):
             return random.choice(intent["responses"])
         
     return "I am sorry, I dindnt understand that"
+
+#>> Chat HTML Get
+
+@app.route("/", methods=["GET"])
+def home():
+    return render_template("chat.html")
 
 
 #>> Health Endpoint 
