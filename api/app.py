@@ -1,3 +1,11 @@
+import nltk
+nltk_data_path = os.path.join(os.path.expanduser('~'), "nltk_data")
+if not os.path.exists(nltk_data_path):
+    nltk.download("punkt", quiet = True)
+    nltk.download("stopwords", quiet = True)
+    nltk.download("wordnet", quiet= True)
+    nltk.download("punkt_tab", quiet = True)
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
@@ -18,8 +26,6 @@ app = Flask(__name__)
 # -- Cors lets the chat.html talk to flask server without being blocked by the browser.
 
 CORS(app) # Enable cors for all routes 
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 #>> Loading the Models 
 MODEL_PATH = os.path.join(API_DIR, "..", "models", "intent_classifier.pkl")
@@ -111,7 +117,9 @@ def chat():
 
 # block only runs when directly execute app.py.
 if __name__ == "__main__":
-    app.run(debug=True, port =5000)
+    port = int(os.environ.get("PORT",5000))
+    app.run(debug=False, host = '0.0.0.0', port = port)
+    
     
     
     
